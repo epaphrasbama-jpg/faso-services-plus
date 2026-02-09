@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faso Services Plus | Agence de Services Premium au Burkina Faso</title>
+    <meta name="description" content="Agence premium de services multi-activités au Burkina Faso. Ménage, nounou, sécurité, chauffeur, événementiel, serveurs, répétiteur. Excellence professionnelle garantie.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fasoservicesplus.bf">
+    <meta property="og:title" content="Faso Services Plus | Services Premium">
+    <meta property="og:description" content="L'excellence au service de votre quotidien">
+    <meta property="og:image" content="https://fasoservicesplus.bf/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fasoservicesplus.bf">
+    <meta property="twitter:title" content="Faso Services Plus">
+    <meta property="twitter:description" content="Agence de services premium au Burkina">
+    <meta property="twitter:image" content="https://fasoservicesplus.bf/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <style>
+        /* ===== RESET & VARIABLES ===== */
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2d3748;
+            --accent-color: #d69e2e;
+            --accent-hover: #b7791f;
+            --light-color: #f7fafc;
+            --text-color: #2d3748;
+            --text-light: #718096;
+            --white: #ffffff;
+            --success: #38a169;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+            --border-radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-padding {
+            padding: 6rem 0;
+        }
+        
+        /* ===== TYPOGRAPHY ===== */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .section-title p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .logo-text span {
+            color: var(--accent-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover:after,
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-color);
+        }
+        
+        .cta-button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.875rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .hero {
+            padding-top: 10rem;
+            padding-bottom: 6rem;
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        .hero-visual {
+            position: relative;
+        }
+        
+        .hero-image {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: var(--transition);
+        }
+        
+        .hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            background-color: var(--light-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--accent-color);
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .service-card:hover:before {
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(214, 158, 46, 0.1), rgba(26, 54, 93, 0.1));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            color: var(--accent-color);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            position: relative;
+            padding-left: 1.75rem;
+        }
+        
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            text-align: center;
+            border-radius: var(--border-radius);
+            padding: 5rem 2rem;
+            margin: 4rem auto;
+            max-width: 1200px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-content p {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        
+        .cta-button-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* ===== CONTACT SECTION ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-details {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            gap: 1.25rem;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(214, 158, 46, 0.1), rgba(26, 54, 93, 0.1));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-text p {
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+        
+        .phone-number, .whatsapp-number {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            text-decoration: none;
+            display: block;
+            margin-top: 0.25rem;
+        }
+        
+        .contact-form {
+            background: var(--light-color);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--white);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(214, 158, 46, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo-img {
+            width: 50px;
+            height: 50px;
+            background: var(--accent-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+        
+        .footer-about p {
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links h4, .footer-services h4 {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-links h4:after, .footer-services h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--accent-color);
+        }
+        
+        .footer-links ul, .footer-services ul {
+            list-style: none;
+        }
+        
+        .footer-links li, .footer-services li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a, .footer-services a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover, .footer-services a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        /* ===== WHATSAPP FLOATING BUTTON ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .hero-container, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .hero {
+                padding-top: 8rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.75rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .section-padding {
+                padding: 4rem 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2.25rem;
+            }
+            
+            .header-container {
+                padding: 1rem 0;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .mobile-menu {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                padding: 2rem;
+                transform: translateY(-100%);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .mobile-menu.active {
+                transform: translateY(0);
+            }
+            
+            .mobile-menu-links {
+                list-style: none;
+            }
+            
+            .mobile-menu-links li {
+                margin-bottom: 1rem;
+            }
+            
+            .mobile-menu-links a {
+                text-decoration: none;
+                color: var(--text-color);
+                font-size: 1.125rem;
+                font-weight: 500;
+                display: block;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid #f1f5f9;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.875rem;
+            }
+            
+            .logo-text {
+                font-size: 1.25rem;
+            }
+        }
+        
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mb-5 { margin-bottom: 2.5rem; }
+        
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mt-5 { margin-top: 2.5rem; }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/22675246478" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-img">FSP</div>
+                <div class="logo-text">Faso<span>Services</span>Plus</div>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#valeurs">Valeurs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="tel:+22672781754" class="cta-button">Nous appeler</a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#valeurs">Valeurs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+22672781754" class="cta-button">Nous appeler</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container hero-container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="text-gradient">L'Excellence au Service de Votre Quotidien</h1>
+                <p>Faso Services Plus est l'agence premium de services multi-activités au Burkina Faso. Nous combinons professionnalisme, fiabilité et excellence pour répondre à tous vos besoins, des plus simples aux plus complexes.</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/22675246478" class="cta-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp : +226 75 24 64 78
+                    </a>
+                    <a href="tel:+22672781754" class="cta-button cta-button-secondary">
+                        <i class="fas fa-phone"></i> Appeler : +226 72 78 17 54
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Satisfaction client</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Professionnels qualifiés</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Service disponible</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-image-placeholder" style="background: linear-gradient(135deg, #1a365d, #2d3748); height: 400px; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                    <div style="text-align: center; padding: 2rem;">
+                        <i class="fas fa-concierge-bell" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.8;"></i>
+                        <p>Image professionnelle à insérer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Nos Services Premium</h2>
+                <p>Une gamme complète de services exécutés avec excellence par des professionnels rigoureusement sélectionnés et formés.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3>Services de Ménage Premium</h3>
+                    <p>Nettoyage professionnel résidentiel et commercial avec produits écologiques et équipements de pointe.</p>
+                    <ul class="service-features">
+                        <li>Ménage régulier et grand ménage</li>
+                        <li>Nettoyage après construction/rénovation</li>
+                        <li>Nettoyage de vitres et surfaces spéciales</li>
+                        <li>Traitement anti-bactérien et désinfection</li>
+                        <li>Service de repassage premium</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-child-reaching"></i>
+                    </div>
+                    <h3>Garde d'Enfants Éducative</h3>
+                    <p>Nounous qualifiées avec formation en pédagogie et premiers secours pour un développement harmonieux.</p>
+                    <ul class="service-features">
+                        <li>Nounou à domicile (journée complète)</li>
+                        <li>Garde périscolaire avec aide aux devoirs</li>
+                        <li>Éveil éducatif et activités pédagogiques</li>
+                        <li>Nounou linguistique (français/anglais)</li>
+                        <li>Garde d'urgence et de nuit</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Chauffeur Privé & VTC</h3>
+                    <p>Service de chauffeur professionnel avec véhicules haut de gamme et conducteurs expérimentés.</p>
+                    <ul class="service-features">
+                        <li>Chauffeur personnel (à l'heure/journée)</li>
+                        <li>Transfert aéroport avec suivi vol</li>
+                        <li>Transport d'affaires et rendez-vous</li>
+                        <li>Service événementiel et mariages</li>
+                        <li>Véhicule avec chauffeur (berline, SUV)</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité & Surveillance</h3>
+                    <p>Agents de sécurité professionnels formés aux dernières normes pour la protection des personnes et biens.</p>
+                    <ul class="service-features">
+                        <li>Gardiennage résidentiel 24h/24</li>
+                        <li>Surveillance d'entreprises et bureaux</li>
+                        <li>Sécurité événementielle et contrôles</li>
+                        <li>Agents en tenue professionnelle</li>
+                        <li>Système de reporting quotidien</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Événementiel & Prestige</h3>
+                    <p>Organisation complète d'événements avec personnel qualifié pour des prestations d'exception.</p>
+                    <ul class="service-features">
+                        <li>Organisation mariages et réceptions</li>
+                        <li>Séminaires d'entreprise et conférences</li>
+                        <li>Coordination et logistique événementielle</li>
+                        <li>Décoration et aménagement d'espaces</li>
+                        <li>Gestion complète de projet</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 - NOUVEAU : SERVEURS -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Service de Serveurs Professionnels</h3>
+                    <p>Personnel de service en salle qualifié pour tous vos événements, de la réception intime au grand gala.</p>
+                    <ul class="service-features">
+                        <li>Serveurs en tenue de cérémonie</li>
+                        <li>Service au plateau et à l'assiette</li>
+                        <li>Maîtrise du service à la française</li>
+                        <li>Barmen pour cocktails et réceptions</li>
+                        <li>Hôtesses d'accueil et service</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 7 - NOUVEAU : RÉPÉTITEUR -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Service de Répétiteur Scolaire</h3>
+                    <p>Soutien scolaire personnalisé avec des enseignants qualifiés pour accompagner la réussite académique.</p>
+                    <ul class="service-features">
+                        <li>Soutien scolaire toutes matières</li>
+                        <li>Préparation aux examens et concours</li>
+                        <li>Aide aux devoirs et méthodologie</li>
+                        <li>Cours de langues étrangères</li>
+                        <li>Suivi personnalisé et rapport régulier</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Services Conciergerie</h3>
+                    <p>Solutions sur mesure pour simplifier votre quotidien et répondre à vos besoins spécifiques.</p>
+                    <ul class="service-features">
+                        <li>Assistant personnel & courses</li>
+                        <li>Organisation et rangement domicile</li>
+                        <li>Petit bricolage et entretien</li>
+                        <li>Gestion de propriétés et locations</li>
+                        <li>Services administratifs et démarches</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section animate-on-scroll">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à Élever Votre Expérience de Service ?</h2>
+                <p>Rejoignez nos nombreux clients satisfaits et découvrez la différence d'un service premium.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/22675246478" class="cta-button cta-button-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Devis Gratuit sur WhatsApp
+                    </a>
+                    <a href="tel:+22672781754" class="cta-button cta-button-secondary">
+                        <i class="fas fa-phone"></i> Parler à un Conseiller
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section-padding" id="valeurs">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Notre Engagement d'Excellence</h2>
+                <p>Ce qui distingue Faso Services Plus, c'est notre engagement inébranlable envers la qualité, la fiabilité et le professionnalisme.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" style="background: linear-gradient(135deg, rgba(56, 161, 105, 0.1), rgba(26, 54, 93, 0.1)); color: var(--success);">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Recrutement Rigoureux</h3>
+                    <p>Tous nos professionnels passent par un processus de sélection exigeant : vérification des antécédents, tests pratiques, et entretiens approfondis.</p>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(26, 54, 93, 0.1)); color: #d69e2e;">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation Continue</h3>
+                    <p>Formations mensuelles sur les dernières techniques, normes d'hygiène, service client et protocoles de sécurité pour un service toujours optimal.</p>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon" style="background: linear-gradient(135deg, rgba(190, 24, 93, 0.1), rgba(26, 54, 93, 0.1)); color: #be185d;">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3>Sécurité Totale</h3>
+                    <p>Assurance responsabilité civile professionnelle, contrats détaillés, et système de suivi qualité pour une tranquillité d'esprit absolue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Contactez l'Excellence</h2>
+                <p>Notre équipe est à votre écoute pour répondre à vos questions et élaborer une solution sur mesure.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Nos Coordonnées</h3>
+                    <p>N'hésitez pas à nous contacter par le moyen qui vous convient le mieux. Notre équipe vous répondra dans les plus brefs délais.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>WhatsApp Premium</h4>
+                                <p>Pour les demandes rapides et les devis instantanés</p>
+                                <a href="https://wa.me/22675246478" class="whatsapp-number" target="_blank">
+                                    +226 75 24 64 78
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Téléphone Direct</h4>
+                                <p>Pour parler directement à un conseiller</p>
+                                <a href="tel:+22672781754" class="phone-number">
+                                    +226 72 78 17 54
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horaires d'Ouverture</h4>
+                                <p><strong>Lundi - Vendredi :</strong> 7h00 - 21h00</p>
+                                <p><strong>Samedi :</strong> 8h00 - 19h00</p>
+                                <p><strong>Dimanche :</strong> 9h00 - 15h00 (urgences)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Zones d'Intervention</h4>
+                                <p><strong>Bobo-Dioulasso :</strong> Toute la ville et périphérie</p>
+                                <p><strong>Ouagadougou :</strong> Service disponible dès maintenant</p>
+                                <p><strong>Autres villes :</strong> Sur demande spécifique</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-on-scroll">
+                    <h3 class="mb-4">Demande de Devis Personnalisé</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Type de Service *</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="menage">Ménage Premium</option>
+                                <option value="nounou">Garde d'Enfants</option>
+                                <option value="chauffeur">Service Chauffeur</option>
+                                <option value="securite">Sécurité & Surveillance</option>
+                                <option value="evenementiel">Événementiel</option>
+                                <option value="serveurs">Service de Serveurs</option>
+                                <option value="repetiteur">Service de Répétiteur</option>
+                                <option value="conciergerie">Services Conciergerie</option>
+                                <option value="multiple">Plusieurs services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Détails de votre demande *</label>
+                            <textarea id="message" class="form-control" required placeholder="Décrivez vos besoins, la fréquence souhaitée, et toute information pertinente..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Envoyer la Demande
+                        </button>
+                        
+                        <p class="text-center mt-3" style="font-size: 0.875rem; color: var(--text-light);">
+                            Nous vous répondrons dans les 2 heures ouvrables
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-img">FSP</div>
+                        <div class="footer-logo-text">Faso Services Plus</div>
+                    </div>
+                    <p>Agence premium de services multi-activités au Burkina Faso. Nous nous engageons à fournir des services d'excellence avec professionnalisme et fiabilité.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/fasoservicesplus" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/fasoservicesplus" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/22675246478" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Nos Services</a></li>
+                        <li><a href="#valeurs">Nos Valeurs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Nos Services</h4>
+                    <ul>
+                        <li><a href="#services">Ménage Premium</a></li>
+                        <li><a href="#services">Garde d'Enfants</a></li>
+                        <li><a href="#services">Service Chauffeur</a></li>
+                        <li><a href="#services">Sécurité</a></li>
+                        <li><a href="#services">Événementiel</a></li>
+                        <li><a href="#services">Serveurs Professionnels</a></li>
+                        <li><a href="#services">Répétiteur Scolaire</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Faso Services Plus. Tous droits réservés.</p>
+                <p class="mt-1">WhatsApp : +226 75 24 64 78 | Téléphone : +226 72 78 17 54</p>
+                <p class="mt-1">Bobo-Dioulasso & Ouagadougou, Burkina Faso</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mobileMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    email: document.getElementById('email').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // In a real implementation, you would send this data to a server
+                // For now, we'll simulate success and show a message
+                
+                // Create WhatsApp message
+                const whatsappMessage = `Nouvelle demande de devis:%0A%0A` +
+                    `Nom: ${formData.name}%0A` +
+                    `Téléphone: ${formData.phone}%0A` +
+                    `Email: ${formData.email}%0A` +
+                    `Service: ${formData.service}%0A` +
+                    `Message: ${formData.message}`;
+                
+                // Open WhatsApp with pre-filled message
+                window.open(`https://wa.me/22675246478?text=${whatsappMessage}`, '_blank');
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Show success message
+                alert('Merci pour votre demande! Vous allez être redirigé vers WhatsApp pour finaliser votre demande.');
+            });
+        }
+        
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all animate-on-scroll elements
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    if (this.classList.contains('nav-link')) {
+                        this.classList.add('active');
+                    }
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.05)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger initial animations for elements already in view
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+            
+            // Update copyright year
+            document.querySelectorAll('.current-year').forEach(el => {
+                el.textContent = new Date().getFullYear();
+            });
+        });
+    </script>
+</body>
+</html>
